@@ -10,6 +10,8 @@ models:
     intermediate:
       +materialized: ephemeral
 vars:
+  stripe_database: FIVETRAN
+  stripe_schema: STRIPE_TEST
   stripe:
     balance_transaction: "{{ ref('stg_stripe__balance_transaction') }}"
     card: "{{ ref('stg_stripe__card') }}"
@@ -28,3 +30,5 @@ vars:
     using_invoices: true
     using_payment_method: true
     using_subscriptions: true
+
+    stripe__subscription_history: True
