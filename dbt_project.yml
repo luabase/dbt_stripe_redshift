@@ -32,3 +32,6 @@ vars:
     using_subscriptions: true
 
     stripe__subscription_history: True
+
+  stripe_source:
+    stripe__subscription_history: True
