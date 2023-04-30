@@ -10,8 +10,8 @@ models:
     intermediate:
       +materialized: ephemeral
 vars:
-  stripe_database: FIVETRAN
-  stripe_schema: STRIPE_TEST
+  stripe_database: demo_data
+  stripe_schema: stripe_test
   stripe:
     balance_transaction: "{{ ref('stg_stripe__balance_transaction') }}"
     card: "{{ ref('stg_stripe__card') }}"
