@@ -11,7 +11,7 @@ models:
       +materialized: ephemeral
 vars:
   stripe_database: demo_data
-  stripe_schema: stripe_test
+  stripe_schema: fivetran_stripe
   stripe:
     balance_transaction: "{{ ref('stg_stripe__balance_transaction') }}"
     card: "{{ ref('stg_stripe__card') }}"
